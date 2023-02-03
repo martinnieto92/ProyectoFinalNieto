@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  background-color: rgb(124, 22, 15);
+}
+
+header a{
+  display: inline;
+  text-decoration: none;
+  color: white;
+} 
+
+.img-logo{ 
+  width: 250px;
+  display: inline;
+}
+
+nav ul li {
+  display: inline; 
+  margin: 20px;
+  padding: 20px;
+  }
+
+main{
+  background-image: url(../recursos/curso1.jpg);
+}
+
+.img-logo1{
+  display: inline;
+  margin: 70px;
+  padding: 0;
+  width: 20%;
+  height: 40%;
+}
+
+
+ol li a{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+.header__menu--negrita{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+footer{
+  background-color: rgba(3, 0, 0, 0.568);
+}
+
+
+
+.main {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "banner banner banner"
+    "prod1 . ."
+    "prod2 . ."
+    "prod3 . ."
+    "fotter fotter fotter";
+  height: 70vh;
+
+}
+
+.banner { 
+  grid-area: banner;
+background-color: blueviolet; }
+
+.prod1 { grid-area: prod1; }
+
+.prod2 { grid-area: prod2; }
+
+.prod3 { grid-area: prod3; }
+
+.fotter { grid-area: fotter; }
+
+
+
+@media (min-width: 300px) {
+  .header{
+  background-color: blue;
+}}
+
+@media(max-width: 700px){
+  .main{
+    background-image: url(../recursos/descarga.jpg);
+  }
+}
