@@ -17,6 +17,12 @@ main {
     padding-top: 15px;
 }
 
+.carousel-img {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+}
+
 /* .header {
     background-color: rgb(124, 22, 15);
     display: flex;
@@ -99,6 +105,13 @@ footer h3 {
     width: 150px;
     visibility: visible;
     opacity: 0.7; 
+}
+
+@media (max-width:768px){
+    .contacto-main{
+        padding-left: 25%;
+        padding-right: 25%;
+                }
 }
 
 main p {
